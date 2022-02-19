@@ -1,0 +1,20 @@
+1- sudo apt install nginx
+2 - sudo ufw app list 
+3 - sudo ufw allow 'Nginx HTTP'
+4 - sudo ufw status
+5 - systemctl status nginx
+6 - http://127.0.0.1
+7 - sudo systemctl stop nginx
+8 - sudo systemctl start nginx
+9 - sudo systemctl restart nginx
+10 - sudo systemctl reload nginx
+11 - sudo systemctl disable nginx
+12 - sudo systemctl enable nginx
+13 - sudo mkdir -p /var/www/127.0.0.1/html
+14 - sudo chown -R $USER:$USER /var/www/127.0.0.1/html
+15 - sudo chmod -R 755 /var/www/127.0.0.1
+16 - nano /var/www/127.0.0.1/html/index.html -> now paste html code 
+17 - sudo nano /etc/nginx/sites-available/127.0.0.1
+18 - sudo nano /etc/nginx/nginx.conf -> now paste     // server_names_hash_bucket_size 64; code inside http 
+19 - sudo nginx -t
+20 - sudo systemctl restart nginx
